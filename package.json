@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "plugin.js",
+  "type": "module",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "npx fastify start plugin.js -l info -P -a 0.0.0.0 -p 5000"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "fastify": "^3.29.0",
+    "fastify-cli": "^3.1.0",
+    "fastify-jwt": "^4.2.0",
+    "fastify-socket.io": "^3.0.0",
+    "http-errors": "^2.0.0",
+    "point-of-view": "^5.3.0"
+  }
+}
