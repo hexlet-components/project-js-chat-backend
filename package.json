@@ -19,6 +19,7 @@
     "fastify-jwt": "^4.2.0",
     "fastify-socket.io": "^3.0.0",
     "http-errors": "^2.0.0",
+    "lodash": "^4.17.21",
     "point-of-view": "^5.3.0"
   }
 }
