@@ -1,11 +1,11 @@
 {
-  "name": "server",
+  "name": "@hexlet/chat-server",
   "version": "1.0.0",
   "description": "",
   "main": "plugin.js",
   "type": "module",
-  "directories": {
-    "lib": "lib"
+  "bin": {
+    "start-server": "./bin/index.js"
   },
   "scripts": {
     "start": "npx fastify start plugin.js -l info -P -a 0.0.0.0 -p 5001"
@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "commander": "^9.3.0",
     "debug": "^4.3.4",
     "fastify": "^3.29.0",
     "fastify-cli": "^3.1.0",
