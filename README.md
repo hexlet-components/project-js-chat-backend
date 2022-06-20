@@ -16,3 +16,27 @@ make install
 $ make start
 # curl http://localhost:5000/api/v1/data
 ```
+
+## Install npm-package
+
+```bash
+npm i @hexlet/chat-server
+```
+
+## Run npm-package
+
+```bash
+npx start-server
+```
+
+## Usage
+
+```
+Usage: start-server start-server [OPTIONS]
+
+Options:
+  -v, --version  output the version number
+  -a, --address  address to listen on (default 0.0.0.0)
+  -p, --port     port to listen on (default 5001)
+  -h, --help     display help for command
+```
