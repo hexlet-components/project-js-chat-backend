@@ -32,7 +32,7 @@ npx start-server
 ## Usage
 
 ```
-Usage: start-server start-server [OPTIONS]
+Usage: start-server [OPTIONS]
 
 Options:
   -v, --version  output the version number
