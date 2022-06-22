@@ -22,8 +22,8 @@ const start = async () => {
     const preparedServer = await plugin(fastify);
     await preparedServer.listen(options.port, options.address);
   } catch (err) {
-    preparedServer.log.error(err)
-    process.exit(1)
+    console.error(err);
+    process.exit(1);
   }
 };
 
