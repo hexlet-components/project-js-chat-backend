@@ -7,8 +7,8 @@ import plugin from '../plugin.js';
 program
   .version('1.0.0', '-v, --version')
   .usage('start-server [OPTIONS]')
-  .option('-a, --address', 'address to listen on (default 0.0.0.0)', '0.0.0.0')
-  .option('-p, --port', 'port to listen on (default 5001)', '5001')
+  .option('-a, --address <address>', 'address to listen on (default 0.0.0.0)', '0.0.0.0')
+  .option('-p, --port <port>', 'port to listen on (default 5001)', '5001')
   .parse(process.argv);
 
 const options = program.opts();

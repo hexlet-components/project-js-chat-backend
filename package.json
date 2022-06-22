@@ -1,6 +1,6 @@
 {
   "name": "@hexlet/chat-server",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "plugin.js",
   "type": "module",
