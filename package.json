@@ -19,8 +19,10 @@
     "fastify-cli": "^3.1.0",
     "fastify-jwt": "^4.2.0",
     "fastify-socket.io": "^3.0.0",
+    "fastify-static": "^4.7.0",
     "http-errors": "^2.0.0",
     "lodash": "^4.17.21",
-    "point-of-view": "^5.3.0"
+    "point-of-view": "^5.3.0",
+    "pug": "^3.0.2"
   }
 }
