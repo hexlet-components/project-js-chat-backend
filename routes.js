@@ -132,4 +132,9 @@ export default (app, defaultState = {}) => {
       .header('Content-Type', 'application/json; charset=utf-8')
       .send(_.omit(state, 'users'));
   });
+
+  app
+    .get('/', (_req, reply) => {
+      reply.sendFile('index.html');
+    });
 };

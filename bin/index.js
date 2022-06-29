@@ -4,11 +4,13 @@ import Fastify from 'fastify';
 import { program } from 'commander';
 import plugin from '../plugin.js';
 
+const port = process.env.PORT || 5000;
+
 program
   .version('1.0.0', '-v, --version')
   .usage('start-server [OPTIONS]')
   .option('-a, --address <address>', 'address to listen on (default 0.0.0.0)', '0.0.0.0')
-  .option('-p, --port <port>', 'port to listen on (default 5001)', '5001')
+  .option('-p, --port <port>', `port to listen on (default ${port})', '${port}'`)
   .parse(process.argv);
 
 const options = program.opts();
@@ -27,6 +29,4 @@ const start = async () => {
   }
 };
 
-start()
-
-// npx fastify start ../plugin.js -l info -P -a 0.0.0.0 -p 5001
+start();
