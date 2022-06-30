@@ -9,7 +9,7 @@ const port = process.env.PORT || 5000;
 const staticPath = path.join(process.cwd(), 'build');
 
 program
-  .version('1.1.2', '-v, --version')
+  .version('1.1.3', '-v, --version')
   .usage('[OPTIONS]')
   .option('-a, --address <address>', 'address to listen on', '0.0.0.0')
   .option('-p, --port <port>', 'port to listen on', port)
@@ -25,7 +25,7 @@ const fastify = Fastify({
 const start = async () => {
   try {
     const appOptions = {
-      staticPath: options.static,
+      staticPath: path.resolve(process.cwd(), options.static),
     };
     const preparedServer = await plugin(fastify, appOptions);
     await preparedServer.listen(options.port, options.address);
