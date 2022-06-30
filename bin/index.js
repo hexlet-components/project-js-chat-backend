@@ -10,7 +10,7 @@ const staticPath = path.join(process.cwd(), 'build');
 
 program
   .version('1.1.2', '-v, --version')
-  .usage('start-server [OPTIONS]')
+  .usage('[OPTIONS]')
   .option('-a, --address <address>', 'address to listen on', '0.0.0.0')
   .option('-p, --port <port>', 'port to listen on', port)
   .option('-s, --static <path>', 'path to static assets files', staticPath)
