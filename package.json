@@ -1,6 +1,6 @@
 {
   "name": "@hexlet/chat-server",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "",
   "main": "plugin.js",
   "type": "module",
@@ -21,8 +21,6 @@
     "fastify-socket.io": "^3.0.0",
     "fastify-static": "^4.7.0",
     "http-errors": "^2.0.0",
-    "lodash": "^4.17.21",
-    "point-of-view": "^5.3.0",
-    "pug": "^3.0.2"
+    "lodash": "^4.17.21"
   }
 }
