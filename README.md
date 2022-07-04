@@ -123,5 +123,5 @@ socket.on('renameChannel', (payload) => {
 
 ```javascript
 // emit rename channel
-socket.emit('removeChannel', { id: 7, name: "new name channel" });
+socket.emit('renameChannel', { id: 7, name: "new name channel" });
 ```
