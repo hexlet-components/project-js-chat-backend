@@ -9,7 +9,7 @@ publish:
 
 # TODO: добавить линтеры и тесты
 lint:
-	echo no lint
+	npx eslint .
 
 test:
 	echo no tests
