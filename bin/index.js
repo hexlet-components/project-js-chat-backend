@@ -19,7 +19,7 @@ program
 const options = program.opts();
 
 const fastify = Fastify({
-  logger: true
+  logger: true,
 });
 
 const start = async () => {
