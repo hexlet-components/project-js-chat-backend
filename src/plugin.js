@@ -13,6 +13,10 @@ const setUpStaticAssets = (app, buildPath) => {
   app.register(fastifyStatic, {
     root: buildPath,
   });
+
+  app.setNotFoundHandler((req, res) => {
+    res.sendFile('index.html')
+  })
 };
 
 const setUpAuth = (app) => {
