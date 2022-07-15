@@ -15,8 +15,8 @@ const setUpStaticAssets = (app, buildPath) => {
   });
 
   app.setNotFoundHandler((req, res) => {
-    res.sendFile('index.html')
-  })
+    res.sendFile('index.html');
+  });
 };
 
 const setUpAuth = (app) => {
