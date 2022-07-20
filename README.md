@@ -33,7 +33,7 @@ Usage: start-server start-server [OPTIONS]
 Options:
   -v, --version            output the version number
   -a, --address <address>  address to listen on (default: "0.0.0.0")
-  -p, --port <port>        port to listen on (default: 5000)
+  -p, --port <port>        port to listen on (default: 5001)
   -s, --static <path>      path to static assets files (default: "./build")
   -h, --help               display help for command
 ```
