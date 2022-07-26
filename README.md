@@ -65,7 +65,7 @@ axios.get('/api/v1/data').then((response) => {
 `/api/v1/signup`
 
 ```javascript
-axios.post('/api/v1/login', { username: 'newuser', password: '123456' }).then((response) => {
+axios.post('/api/v1/signup', { username: 'newuser', password: '123456' }).then((response) => {
   console.log(response.data); // => { token: ..., username: 'newuser' }
 });
 ```
