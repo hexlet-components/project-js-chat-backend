@@ -10,7 +10,7 @@ make install
 
 ```sh
 $ make start
-# curl http://localhost:5000/api/v1/data
+# curl http://localhost:5001/api/v1/data
 ```
 
 ## Install npm-package
