@@ -55,7 +55,11 @@ axios.post('/api/v1/login', { username: 'admin', password: 'admin' }).then((resp
 `/api/v1/data`
 
 ```javascript
-axios.get('/api/v1/data').then((response) => {
+axios.get('/api/v1/data', {
+  headers: {
+    Authorization: `Bearer ${token}`,
+  },
+}).then((response) => {
   console.log(response.data); // => { channels: [...], currentChannelId: 1, messages: [] }
 });
 ```
