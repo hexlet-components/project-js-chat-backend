@@ -2,7 +2,7 @@ start:
 	npm start
 
 install:
-	npm ci
+	npm i
 
 publish:
 	npm publish --access=public
