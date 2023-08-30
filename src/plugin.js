@@ -1,8 +1,8 @@
 // @ts-check
 
 import fastifySocketIo from 'fastify-socket.io';
-import fastifyStatic from 'fastify-static';
-import fastifyJWT from 'fastify-jwt';
+import fastifyStatic from '@fastify/static';
+import fastifyJWT from '@fastify/jwt';
 import HttpErrors from 'http-errors';
 
 import addRoutes from './routes.js';
@@ -34,7 +34,7 @@ const setUpAuth = (app) => {
     });
 };
 
-export default async (app, options) => {
+export default async (app, options = { staticPath: 'build'}) => {
   setUpAuth(app);
   setUpStaticAssets(app, options.staticPath);
   await app.register(fastifySocketIo);

@@ -1,6 +1,6 @@
 {
   "name": "@hexlet/chat-server",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "",
   "main": "plugin.js",
   "type": "module",
@@ -8,19 +8,19 @@
     "start-server": "./bin/index.js"
   },
   "scripts": {
-    "start": "npx fastify start plugin.js -l info -P -a 0.0.0.0 -p 5001"
+    "start": "npx fastify start src/plugin.js -l info -P -a 0.0.0.0 -p 5001"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fastify/jwt": "^7.2.0",
+    "@fastify/static": "^6.10.2",
     "commander": "^9.3.0",
     "debug": "^4.3.4",
     "eslint-config-airbnb": "^19.0.4",
-    "fastify": "^3.29.0",
-    "fastify-cli": "^3.1.0",
-    "fastify-jwt": "^4.2.0",
-    "fastify-socket.io": "^3.0.0",
-    "fastify-static": "^4.7.0",
+    "fastify": "^4.22.0",
+    "fastify-cli": "^5.8.0",
+    "fastify-socket.io": "^4.0.0",
     "http-errors": "^2.0.0",
     "lodash": "^4.17.21",
     "socket.io": "^4.5.1"
