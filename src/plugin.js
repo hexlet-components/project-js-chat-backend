@@ -34,7 +34,7 @@ const setUpAuth = (app) => {
     });
 };
 
-export default async (app, options = { staticPath: 'build'}) => {
+export default async (app, options = { staticPath: 'build' }) => {
   setUpAuth(app);
   setUpStaticAssets(app, options.staticPath);
   await app.register(fastifySocketIo);
