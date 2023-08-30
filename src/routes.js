@@ -91,10 +91,8 @@ export default (app, defaultState = {}) => {
   });
 
   app.post('/api/v1/login', async (req, reply) => {
-    const data = JSON.parse(req.body);
-    console.log(data);
-    const username = _.get(data, 'username');
-    const password = _.get(data, 'password');
+    const username = _.get(req.body, 'username');
+    const password = _.get(req.body, 'password');
     const user = state.users.find((u) => u.username === username);
 
     if (!user || user.password !== password) {
@@ -107,9 +105,8 @@ export default (app, defaultState = {}) => {
   });
 
   app.post('/api/v1/signup', async (req, reply) => {
-    const data = JSON.parse(req.body);
-    const username = _.get(data, 'username');
-    const password = _.get(data, 'password');
+    const username = _.get(req.body, 'username');
+    const password = _.get(req.body, 'password');
     const user = state.users.find((u) => u.username === username);
 
     if (user) {
